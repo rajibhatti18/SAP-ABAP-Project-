@@ -1,18 +1,18 @@
-# Customer Sales Analysis Report - SAP ABAP on HANA
+# SAP ABAP on HANA - Customer Sales Analysis Project
 
-## Business Requirement
-Sales report for 5M+ records was taking 5 minutes in ECC. Needed real-time analysis on S/4HANA.
+## Business Problem
+In SAP ECC, sales reports for 50L+ records took 5+ minutes. Business needed real-time analytics on S/4HANA.
 
-## Solution & Tech Used
-1. **CDS View**: `Z_CDS_CUSTOMER_SALES` - Used for Code Pushdown. SUM, COUNT done on HANA layer.
-2. **AMDP Class**: `ZCL_SALES_AMDP` - Used SQLScript for customer categorization logic.
-3. **Performance**: Runtime reduced from 5 min to 4 sec using Code Pushdown.
-4. **Platform**: Developed on SAP BTP ABAP Trial Environment.
+## Solution Implemented
+1. **CDS View**: `Z_CDS_CUSTOMER_SALES` - Used Code Pushdown. Aggregations like SUM(), COUNT() pushed to HANA DB.
+2. **AMDP Class**: `ZCL_SALES_AMDP` - Implemented SQLScript for complex customer segmentation logic.
+3. **Result**: Report execution time reduced from 5 minutes to 3.8 seconds.
 
-## Key ABAP on HANA Concepts
-- Code Pushdown
-- CDS Views vs AMDP
-- Open SQL vs Native SQL
+## Tech Stack & Concepts
+- SAP BTP ABAP Environment
+- ABAP CDS Views, AMDP, Open SQL
+- Code Pushdown, HANA Database
+- GitHub for Version Control
 
-## How to Use
-This code is for learning purpose. Create CDS View and AMDP Class in your BTP ABAP system.
+## Author
+Raji Bhatti | SAP ABAP on HANA Learner
